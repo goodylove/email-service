@@ -206,7 +206,7 @@ export class EmailServices {
 
       const info = await this.transporter.sendMail(mail_options);
 
-      this.logger.log(`✅ Email sent successfully: ${info.messageId}`);
+      this.logger.log(`Email sent successfully: ${info.messageId}`);
 
       // Optional: Store success in cache for tracking
       await this.cacheService.set(

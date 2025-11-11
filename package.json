@@ -20,12 +20,14 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@golevelup/nestjs-rabbitmq": "^6.0.2",
     "@nestjs/axios": "^4.0.1",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
     "@nestjs/microservices": "^11.1.8",
     "@nestjs/platform-express": "^11.0.1",
+    "@types/uuid": "^10.0.0",
     "@upstash/redis": "^1.35.6",
     "amqp-connection-manager": "^5.0.0",
     "amqplib": "^0.10.9",
@@ -33,7 +35,8 @@
     "ioredis": "^5.8.2",
     "nodemailer": "^7.0.10",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.2"
+    "rxjs": "^7.8.2",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
