@@ -22,15 +22,18 @@
   "dependencies": {
     "@nestjs/axios": "^4.0.1",
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
     "@nestjs/microservices": "^11.1.8",
     "@nestjs/platform-express": "^11.0.1",
+    "@upstash/redis": "^1.35.6",
     "amqp-connection-manager": "^5.0.0",
     "amqplib": "^0.10.9",
     "axios": "^1.13.2",
     "ioredis": "^5.8.2",
+    "nodemailer": "^7.0.10",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -39,6 +42,7 @@
     "@nestjs/schematics": "^11.0.0",
     "@nestjs/testing": "^11.0.1",
     "@types/express": "^5.0.0",
+    "@types/handlebars": "^4.0.40",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.10.7",
     "@types/supertest": "^6.0.2",
