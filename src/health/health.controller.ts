@@ -44,4 +44,14 @@ export class HealthController {
             service: 'email-service'
         };
     }
+
+
+    @Get('kaithheathcheck')
+    leapcellHealthCheck() {
+        return {
+            status: 'ok',
+            service: 'email-service',
+            timestamp: new Date().toISOString()
+        };
+    }
 }

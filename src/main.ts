@@ -35,7 +35,7 @@ async function bootstrap() {
 
   await app.startAllMicroservices();
 
-  const port = configService.get('PORT', 3000);
+  const port = configService.get('PORT', 8080);
   await app.listen(port);
 
   logger.log(`Email Service is running on port ${port}`);
