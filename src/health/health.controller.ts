@@ -7,7 +7,7 @@ import {
 import { Redis } from '@upstash/redis';
 import { cache_service } from '../cache/cache.module';
 
-@Controller('health')
+@Controller()
 export class HealthController {
     constructor(
         private health: HealthCheckService,
@@ -15,7 +15,7 @@ export class HealthController {
         @Inject(cache_service) private cache_service_redis: Redis
     ) { }
 
-    @Get()
+    @Get('health')
     @HealthCheck()
     async check() {
         let redisStatus = { status: 'down', error: '' };
