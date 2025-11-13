@@ -35,4 +35,4 @@ async function sendTestEmail() {
   }
 }
 
-sendTestEmail();
+// sendTestEmail();
