@@ -19,7 +19,7 @@ export class HealthController {
     }
 
 
-    @Get('kaithheathcheck')
+    @Get('kaithhealth')
     @HealthCheck()
     check_health() {
         return { status: 'ok', timestamp: new Date().toISOString() };
